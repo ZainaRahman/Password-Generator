@@ -5,7 +5,7 @@
 
 To use the Password Generator, simply open the `index.html` file in a web browser. No additional installation is required. The images included here might not be seen sometimes. If such issue occurs use the folowing link:
 https://cosmic-madeleine-79a4a4.netlify.app/
-The above link is only compatible for desktop version for now. (Upgrades incoming)
+The link is only compatible for desktop version for now. (Upgrades incoming)
 
 ## Usage
 
