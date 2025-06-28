@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+   background: #1F2937;
+  
+   line-height: 20px;
+   font-size: 30px;
+   font-style: "Orbitron", sans-serif;
+   position: fixed;
+   margin: 0;
+   padding: 0 100px; 
+   min-height: 100vh;
+}
+
+
+
+.parts{
+    display:flex;
+}
+
+
+#first{
+    color:white;
+    padding-top: 100px;
+}
+
+#second{
+    color:#4ADF86;
+}
+
+#text{
+    color: grey;
+    font-size: 20px;
+}
+
+#text1{
+    color: #4ADF86;
+    font-size: 30px;
+    opacity:0;
+    transform: translateX(-70px);
+    animation: shine 0.5s ease-in-out alternate both;
+}
+
+@keyframes shine{
+   to{opacity: 1;
+    transform: translateX(0);}
+}
+
+#heading{
+    display:block;
+    
+}
+
+#generate{
+    cursor: pointer;
+    background: #10b981;
+    color: #1F2937;
+    padding: 5px 5px;
+    border: 0px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    
+}
+
+#generate:hover{
+    font-size: large;
+    height: 40px;
+    width: 200px;
+    box-shadow: 0 0 7px 3px rgb(146, 226, 210);
+}
+
+#margin{
+    background: rgb(6, 158, 128) ;
+    width: 500px;
+    height: 2px;
+    margin-top: 20px;
+}
+
+.custom{
+    display:flex;
+}
+
+#all{
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4ADF86;
+    border: none;
+    border-radius: 5px;
+    color: #1F2937;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 20px;
+    opacity:0;
+    transform: translateX(-70px);
+    animation: shine 0.5s ease-in-out alternate both;
+    transition: all 0.5s ease;
+}
+
+#all:hover{
+    font-size: large;
+    height: 50px;
+    width: 200px;
+    box-shadow: 0 0 7px 3px rgb(146, 226, 210);
+    
+}
+
+.box{
+    display: flex;
+    
+}
+
+#boxes1, #boxes2{ 
+    background: #273549;
+    padding-top: 10px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 7px;
+    width: 211px;
+    height: 30px;
+    margin-right: 70px;
+    color:#4ADF86;
+    font-size: 20px;
+    text-align: center;
+}
+
+.password-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 10px;
+}
+
+ #cop {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4ADF86;
+    border: none;
+    border-radius: 5px;
+    color: #1F2937;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 80px;
+    transition: all 0.5s ease;
+}
+
+#cop:hover{
+    font-size: large;
+    height: 40px;
+    width: 100px;
+    box-shadow: 0 0 7px 3px rgb(146, 226, 210);
+}
+
+#images{
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    margin-top: 120px;
+    margin-left: 80px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: 
+      fadeInRight 1s ease 0.3s forwards, pulseGlow 3s infinite ease-in-out 1s;
+    
+
+}
+
+
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+  }
+}
+
+#images img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .parts {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  #generate, #all, #cop {
+    width: 90% !important;
+    font-size: 18px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #boxes1, #boxes2 {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #images {
+    width: 90%;
+    height: auto;
+    margin: 30px auto 0;
+  }
+
+  #heading h1, #text, #text1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .custom {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .box {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  #cop {
+    margin-left: 0;
+  }
+}
+
+
+
